@@ -1,5 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react';
 import Recipe from './Recipe';
+import ErrorRecipe from './ErrorRecipe';
 // import './App.css';
 import './css/style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -23,7 +24,7 @@ function App() {
   const getRecipies = async ()=>{
     const responce = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
     const data = await responce.json();
-    console.log(data.hits);
+    // console.log(data.hits);
     setRecipies(data.hits);
   }
 
@@ -54,6 +55,7 @@ function App() {
           ingredients = {recipe.recipe.ingredients}
         />
       ))}
+        { recipies.length>0 ? null : <ErrorRecipe key_word = {query}/>}
       </div>
     </div>
   );

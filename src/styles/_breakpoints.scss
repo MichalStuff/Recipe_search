@@ -36,36 +36,6 @@ $breakpoints: (
     }
 }
 
-// @mixin xs_landspace{
-//     @media (min-width : map-get($breakpoints, "xs"))and (orientation : landscape){
-//         @content;
-//     }
-// }
-
-// @mixin sm_landscape{
-//     @media (min-width : map-get($breakpoints, "sm")) and (orientation : landscape){
-//         @content;
-//     }
-// }
-
-// @mixin md_landscape{
-//     @media (min-width : map-get($breakpoints, "sm")) and (orientation : landscape){
-//         @content;
-//     }
-// }
-
-// @mixin lg_landscape{
-//     @media (min-width : map-get($breakpoints, "sm")) and (orientation : landscape){
-//         @content;
-//     }
-// }
-
-// @mixin xl_landscape{
-//     @media (min-width : map-get($breakpoints, "sm")) and (orientation : landscape){
-//         @content;
-//     }
-// }
-
 @mixin breakpoints($bp : 0){
     @media (min-width: $bp) and (orientation : portrait){
         @content

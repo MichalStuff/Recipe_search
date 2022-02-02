@@ -153,4 +153,35 @@ body {
         }
     }
     }
+    &__error{
+        padding: 10px;
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            strong{
+                color: red;
+            }
+        }     
+
+        @include xs{
+            h1{
+                font-size: 40px;
+            }
+        }
+        @include sm{
+            h1{
+                font-size: 48px;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+        @include md{
+            h1{
+                font-size: 50px;
+            }
+        }
+    }
 }

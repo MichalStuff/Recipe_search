@@ -2,7 +2,7 @@
   "name": "stronka",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://michalstuff.github.io/Recipe_search",
+  "homepage": "https://michalstuff.github.io/Recipe_search/",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.17",
