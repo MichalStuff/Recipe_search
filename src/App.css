@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Staatliches&display=swap');
+
+.App{
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    font-family: 'Staatliches', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-form{
+    min-height: 10vh;
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-bar{
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    padding: 7px;
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-button{
+    box-sizing: border-box;
+    padding: 7px 20px;
+    border: none;
+    font-size:18px;
+    font-weight: bold;
+    background-color: mediumturquoise;
 }
 
-.App-link {
-  color: #61dafb;
+.search-icon{
+    font-size: 16px;
+}
+.reciepes-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+}
+.recipe{
+    margin: 20px;
+    padding: 10px;
+    min-width: 40%;
+    max-width:40%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff3;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipe h1{
+    font-family: 'Staatliches', cursive;
+    text-shadow: 2px 2px #ffff ff;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-align: center;
+    max-width: 80%;
+}
+
+.recipe ol{
+    max-width: 70%;
+}
+
+.recipe li{
+    list-style:disc;
 }
